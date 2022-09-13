@@ -77,7 +77,7 @@
 
           alg.forEach(function(obj) {
             if(obj.code) {
-              p.allergies.append("<br>" + obj.code.text);
+              p.allergies += "<br>" + obj.code.text;
             }
           });
 
