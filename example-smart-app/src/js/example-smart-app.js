@@ -75,6 +75,12 @@
 
           p.allergies = "";
 
+          alg.forEach(function(obj) {
+            if(obj.code) {
+              p.allergies.append("<br>" + obj.code.text);
+            }
+          });
+
           ret.resolve(p);
         });
       } else {
